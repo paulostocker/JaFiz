@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="import" href="header.html">
+</head>
+<body>
+		<form class="login" action="Usuario" method="post" style="text-align:center;margin-top:5%;height:400px;">
+			<input type="hidden" name="ind" value="1"/>
+			<div class="jumbotron" style="text-align:center;width:350px;margin-left:35%;border-radius:15px;">
+				<div class="intro">J·Fiz!</div>
+				<font class="intro" style="font-size:28px;">Suas tarefas sempre organizadas</font>
+				<br><br>
+				
+				<i class="fa fa-bars" aria-hidden="true" style="width:15px"></i>
+				<input class="form-control" placeholder="Nome" type="text" id="nome" name="nome" required/><br>
+				
+				<i class="fa fa-envelope-o" aria-hidden="true" style="width:15px"></i>
+				<input class="form-control" placeholder="E-mail" type="text" id="email" name="email" required/><br>
+				
+				<i class="fa fa-calendar" aria-hidden="true" style="width:15px"></i>
+				<input class="form-control" placeholder="E-mail" type="date" id="nasc" name="nasc" required/><br>
+				
+				<i class="fa fa-lock" aria-hidden="true" style="width:15px"></i>
+				<input data-toggle="tooltip" title="" data-placement="right" data-original-title="Sua senha deve possuir no mÌnimo 6 dÌgitos." class="form-control" placeholder="Senha" type="password" id="pass" name="senha" required/><br>
+				
+				<input type="hidden" name="ind" value="1"/>
+				<a href="index.html" class="btn btn-sm btn-default">Voltar</a>
+				<button type="submit" class="btn btn-sm btn-success">Confirmar</button>
+			</div>
+		</form>
+</body>
+</html>

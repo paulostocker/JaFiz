@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="import" href="header.html">
+<script type="text/javascript">
+function logintest(){
+	$.get("Usuario&ind=1", function(responseText) {   // Execute Ajax GET request on URL of "someservlet" and execute the following function with Ajax response text...
+     	alert(responseText);           // Locate HTML DOM element with ID "somediv" and set its text content with the response text.
+  	});
+}
+</script>
+</head>
+<body>
+		<form class="login" action="Usuario" method="post" style="text-align:center;margin-top:10%;height:400px;">
+			<input type="hidden" name="ind" value="3"/>
+			<div class="intro">J·Fiz!</div>
+			<font class="intro" style="font-size:28px;">Suas tarefas sempre organizadas</font>
+			<br><br>
+				
+			<i class="fa fa-envelope-o" aria-hidden="true" style="width:15px"></i>
+			<input class="form-control" placeholder="E-mail" type="text" id="login" name="email" required/><br>
+			<div id="loginerror" style="display:none">Email ou Senha incorretos!</div>
+			
+			<i class="fa fa-lock" aria-hidden="true" style="width:15px"></i>
+			<input class="form-control" placeholder="Senha" type="password" id="senha" name="senha" required/><br>
+			
+			<div class="tooltip"></div>
+			
+			<button type="submit" class="btn btn-sm btn-success">Entrar</button>
+			<a href="cadastrar.html" class="btn btn-sm btn-primary">Cadastrar</a>
+		</form>
+</body>
+</html>
